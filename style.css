@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body{
+    background: hsl(275, 100%, 97%)  url(images/background-pattern-desktop.svg) repeat-x top fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans", serif;
+    font-size: 16px;
+}
+
+.faq-headline {
+    font-size: 2rem;
+    font-weight: 200px;
+}
+
+body h3,p {
+    font-size: 14px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 500px;
+    margin-top: 150px;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.faq-headline{
+   display: flex;
+}
+.faq-headline img{
+   padding-right: 30px;
+}
+
+img, svg {
+    max-width: 	100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    gap: 1rem;
+    border: 0;
+}
+
+button:hover {
+    color: purple;
+    transition: 0.5s;
+}
+
+.accordion-container, .accordion-item:not(:last-child) {
+    border-bottom:  2px solid hsl(275, 100%, 97%);
+}
+
+.accordion-item, .icons img {
+    min-width: 30px;
+}
+
+.accordion-item .icons .minus-icon {
+    display: none;
+}
+
+.accordion-description {
+    background-color: white ;
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 200ms ease;
+}
+
+.accordion-description p {
+    color: hsl(292, 16%, 49%);
+    padding: 1.5rem 0;
+}
+
+
+@media (max-width: 540px) {
+    body{
+        background-image: url(images/background-pattern-mobile.svg);
+    }
+}
